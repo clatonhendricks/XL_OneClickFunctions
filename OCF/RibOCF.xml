@@ -54,9 +54,6 @@
           <box id ="box5" boxStyle ="horizontal" >
             <button id ="FB" size ="large" label ="Feedback" screentip ="Provide feeback to improve the tool" onAction ="SimpleFunctions" imageMso="MarkAsUnread"  />
             <button id ="Frnd" size ="large" label ="Tell A Friend" screentip ="As this project is internal please refer only internal employees" onAction ="SimpleFunctions" imageMso="BusinessCardInsertMenu"  />
-            <!-- <button id ="Update" size ="large" label ="Update" screentip ="Click here to update the Addin" onAction ="SimpleFunctions" imageMso="ViewWebLayoutView"  />-->
-            <button id ="Note" size ="large" label ="NOTE" screentip ="Note from the Developer...." onAction ="SimpleFunctions" imageMso="ReadingViewShowOnePage"  />
-            <!--  <button  idMso ="FileOpen"  /> -->
           </box>
 
         </group>

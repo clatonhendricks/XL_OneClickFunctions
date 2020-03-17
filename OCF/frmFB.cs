@@ -50,9 +50,9 @@ namespace XLOCF
                 txtSub.Text = "Try out One Click Functions";
                 string Body = "Hi there," + System.Environment.NewLine +
                 System.Environment.NewLine +
-                "I've been using this Excel Addin 'One Click Functions' which has some built in functions where I dont have to write Functions, this addin writes it for me. " + System.Environment.NewLine +
+                "I've been using this Excel Addin 'One Click Functions' which has some built in functions where I don't have to write them myself, this addin writes it for me. " + System.Environment.NewLine +
                 "I think you should try this. " + System.Environment.NewLine +
-                "Install it from http://codebox/OCF " + System.Environment.NewLine +
+                "Install it from https://github.com/clatonhendricks/XL_OneClickFunctions" + System.Environment.NewLine +
                 System.Environment.NewLine + System.Environment.NewLine +
                 "Regards,";
 
@@ -87,18 +87,17 @@ namespace XLOCF
             {
                 if (check())
                 {
-                
-                    // Claton
-                    //Microsoft.Office.Interop.Outlook .Application opp = new Microsoft.Office.Interop.Outlook.Application();
-                    //Microsoft.Office.Interop.Outlook.MailItem mail = (Microsoft.Office.Interop.Outlook.MailItem)opp.CreateItem(0);
 
-                    //mail.To = txtTO.Text;
+                    Microsoft.Office.Interop.Outlook.Application opp = new Microsoft.Office.Interop.Outlook.Application();
+                    Microsoft.Office.Interop.Outlook.MailItem mail = (Microsoft.Office.Interop.Outlook.MailItem)opp.CreateItem(0);
                     
-                    //mail.Subject = txtSub.Text;
-                    //mail.Body = txtBody.Text;
+                    mail.To = txtTO.Text;
 
-                    //mail.Send();
-                    //this.Close();
+                    mail.Subject = txtSub.Text;
+                    mail.Body = txtBody.Text;
+
+                    mail.Send();
+                    this.Close();
                 }
             }
             catch (Exception ex)
@@ -114,18 +113,17 @@ namespace XLOCF
             {
                 if (check())
                 {
-                    //Claton
-                    //Microsoft.Office.Interop.Outlook.Application opp = new Microsoft.Office.Interop.Outlook.Application();
-                    //Microsoft.Office.Interop.Outlook.MailItem mail = (Microsoft.Office.Interop.Outlook.MailItem)opp.CreateItem(0);
+                    Microsoft.Office.Interop.Outlook.Application opp = new Microsoft.Office.Interop.Outlook.Application();
+                    Microsoft.Office.Interop.Outlook.MailItem mail = (Microsoft.Office.Interop.Outlook.MailItem)opp.CreateItem(0);
 
-                    //mail.To = "clatonh@microsoft.com";
+                    mail.To = "clatonhendricks@msn.com";
 
 
-                    //mail.Subject = this.cboSub.Text + ": " + txtSub.Text;
-                    //mail.Body = this.txtBody.Text + System.Environment.NewLine + System.Environment.NewLine + "Sent using " + lblVer.Text;
+                    mail.Subject = this.cboSub.Text + ": " + txtSub.Text;
+                    mail.Body = this.txtBody.Text + System.Environment.NewLine + System.Environment.NewLine + "Sent using " + lblVer.Text;
 
-                    //mail.Send();
-                    //this.Close();
+                    mail.Send();
+                    this.Close();
                 }
             }
             catch (Exception ex)

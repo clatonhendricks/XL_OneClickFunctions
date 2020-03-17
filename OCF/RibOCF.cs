@@ -126,15 +126,6 @@ namespace XLOCF
                 case Constants.RibbonButtonID.UPDATE:
                     Update();
                     break;
-
-                case Constants.RibbonButtonID.NOTE:
-                    Note();
-                    break;
-
-
-
-
-
             }
         }
 
@@ -147,14 +138,14 @@ namespace XLOCF
                 FB.Text = "Tell A Friend";
                 FB.Show();
             }
-            else { MessageBox.Show("Please refer your friends to go to http://codebox/OCF"); }
+            else { MessageBox.Show("Please refer your friends to go to https://github.com/clatonhendricks/XL_OneClickFunctions"); }
         }
 
-        private void Note()
-        {
-            Form Note = new frmNote();
-            Note.Show();
-        }
+        //private void Note()
+        //{
+        //    Form Note = new frmNote();
+        //    Note.Show();
+        //}
 
         private void Update()
         {
