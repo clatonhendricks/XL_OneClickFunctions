@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui" onLoad="Ribbon_Load">
+ 
+  <ribbon startFromScratch ="false">
+    <tabs>
+      <tab idMso="TabAddIns" visible ="false"/>
+      <tab id ="S_Functions" label ="One Click Functions" visible ="true" >
+
+        <!-- String Functions CAPS, lower, Proper, Trim // Concatenate including Space and commas-->
+        <group id="String" label="One Click String Functions">
+          <button id="Caps" size="large" label="All CAPS" screentip= "Changes all text to CAPS" onAction="SimpleFunctions"  imageMso="ChangeStylesMenu" />
+          <button id="Lower" size="large" label="all lower" screentip= "Changes all text to lower case" onAction="SimpleFunctions" imageMso="FormControlEditBox" />
+          <button id="Proper" size="large" label="Proper Case" screentip= "Changes all text to Proper Case" onAction="SimpleFunctions" imageMso="QuickStylesSets" />
+          <button id="Trim" size="large" label="Trim" screentip="Trim's the leading and ending spaces" onAction="SimpleFunctions" imageMso="TextDirection" />
+        </group>
+
+        <!--  Math functions: Subtract, Multiply, Product, Divide, Countif, CountA, CountB.// Round up, Round down, Odd, Even  -->
+        <group id ="Math" label ="One click Math Functions" >
+          <box id="Box2"  boxStyle ="horizontal" >
+            <button id="Subtract" size="large" label="Subtract" screentip="Subtract two values and privides the Result" onAction="SimpleFunctions" getImage="GetImage"/>  <!--image ="Minus.png" />-->
+            <button id="Multiply" size="large" label="Multiply" screentip="Multiplies two values and privides the Result" onAction="SimpleFunctions"  getImage="GetImage"/>
+            <button id="Product" size="large" label="Product" screentip="Multiplies the values with each other in a given range" onAction="SimpleFunctions"  getImage="GetImage"/>
+            <button id="Divide" size="large" label="Divide" screentip="Divides two values and privides the Answer in the 3rd empty cell" onAction="SimpleFunctions" getImage="GetImage"/>
+            <button id="Countif" size="large" label="Count If" screentip="Counts the number of cells based on the criteria" onAction="SimpleFunctions" getImage="GetImage"/>
+            <button id="CountA" size="large" label="Count non Blanks" screentip="Counts the number of cells based on the criteria" onAction="SimpleFunctions" getImage="GetImage"/>
+            <button id="CountB" size="large" label="Count Blanks" screentip="Counts the number of cells based on the criteria" onAction="SimpleFunctions" getImage="GetImage"/>
+          </box>
+        </group>
+
+        <!-- Date Functions // DateDiff, Now  -->
+        <group id ="DateF" label ="One click Date and Time Functions" >
+          <box id ="Box3" boxStyle ="horizontal" >
+            <button id="Now" size="large" label="Now" screentip="Provides the current Date and Time" onAction="SimpleFunctions" getImage="GetImage"/>
+            <button id="DateD_Days" size="large" label="Date diff in Days" screentip="Gives you the diff in days" onAction="SimpleFunctions" getImage="GetImage"/>
+            <!--=A1-A2 -->
+            <button id="DateD_Month" size="large" label="Date diff in Months" screentip="Gives you the diff in Month's" onAction="SimpleFunctions" getImage="GetImage"/>
+            <!-- =Month(A1) - Month(A2)  -->
+            <button id="DateD_Year" size="large" label="Date diff in Year" screentip="Gives you the diff in Year's" onAction="SimpleFunctions" getImage="GetImage"/>
+            <!-- =Year(A1) - Year(A2)  -->
+
+          </box>
+        </group>
+
+        <!-- Stats Functions -->
+        <group id ="Stats" label ="One Click Lookup Functions" >
+          <box id ="box4" boxStyle ="horizontal" >
+            <button id="VLookup" size="large" label="VLookUp" screentip="Provides the value from a Vertical Lookup" onAction="SimpleFunctions" imageMso="TableStyleColumnHeaders" />
+            <button id="HLookup" size="large" label="HLookUp" screentip="Provides the value from a Horizontal Lookup" onAction="SimpleFunctions" imageMso="TableStyleRowHeaders" />
+          </box>
+        </group>
+
+        <!-- Feedback section -->
+        <group id ="Feedback" label ="Feedback" >
+          <box id ="box5" boxStyle ="horizontal" >
+            <button id ="FB" size ="large" label ="Feedback" screentip ="Provide feeback to improve the tool" onAction ="SimpleFunctions" imageMso="MarkAsUnread"  />
+            <button id ="Frnd" size ="large" label ="Tell A Friend" screentip ="As this project is internal please refer only internal employees" onAction ="SimpleFunctions" imageMso="BusinessCardInsertMenu"  />
+            <!-- <button id ="Update" size ="large" label ="Update" screentip ="Click here to update the Addin" onAction ="SimpleFunctions" imageMso="ViewWebLayoutView"  />-->
+            <button id ="Note" size ="large" label ="NOTE" screentip ="Note from the Developer...." onAction ="SimpleFunctions" imageMso="ReadingViewShowOnePage"  />
+            <!--  <button  idMso ="FileOpen"  /> -->
+          </box>
+
+        </group>
+
+
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
+

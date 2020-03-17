@@ -1,0 +1,16 @@
+C:\Users\clatonh\source\repos\XLOCF\bin\Debug\OneClickFunctions.dll
+C:\Users\clatonh\source\repos\XLOCF\bin\Debug\OneClickFunctions.pdb
+C:\Users\clatonh\source\repos\XLOCF\bin\Debug\OneClickFunctions.dll.manifest
+C:\Users\clatonh\source\repos\XLOCF\bin\Debug\OneClickFunctions.vsto
+C:\Users\clatonh\source\repos\XLOCF\bin\Debug\Microsoft.Office.Tools.Common.v4.0.Utilities.dll
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.csprojAssemblyReference.cache
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.frmCriteria.resources
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.frmFB.resources
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.frmLookup.resources
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.frmNote.resources
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.Properties.Resources.resources
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.csproj.GenerateResource.cache
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.csproj.CoreCompileInputs.cache
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\XLOCF.csproj.CopyComplete
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\OneClickFunctions.dll
+C:\Users\clatonh\source\repos\XLOCF\obj\Debug\OneClickFunctions.pdb
